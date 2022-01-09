@@ -18,7 +18,7 @@ botonCalcular.onclick = function() {
 
   horasVideos = horasVideos + Number(document.querySelector("#horas2").value);
   minutosVideos = minutosVideos + Number(document.querySelector("#minutos3").value);
-  segundosVideos = segundosVideos + Number(document.querySelector("#segundos2").value);
+  segundosVideos = segundosVideos + Number(document.querySelector("#segundos3").value);
 
   horasVideos = horasVideos + Number(document.querySelector("#horas3").value);
   minutosVideos = minutosVideos + Number(document.querySelector("#minutos3").value);
@@ -26,7 +26,7 @@ botonCalcular.onclick = function() {
 
   horasVideos = horasVideos + Number(document.querySelector("#horas4").value);
   minutosVideos = minutosVideos + Number(document.querySelector("#minutos4").value);
-  segundosVideos = minutosVideos + Number (document.querySelector("#segundos4").value);
+  segundosVideos = segundosVideos + Number (document.querySelector("#segundos4").value);
 
   horasVideos = horasVideos + Number(document.querySelector("#horas5").value);
   minutosVideos = minutosVideos + Number(document.querySelector("#minutos5").value);
