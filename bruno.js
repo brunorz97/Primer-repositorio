@@ -29,7 +29,7 @@ function disminuirIntento(){
 
 function ayudaParaGanar(numeroEscogido){
     if (numeroEscogido < numeroRandom){
-        document.querySelector("#numero-elegido").textContent = numeroEscogido;
+        document.querySelector("#posible-numero").textContent = `Tu numero es mayor que ${numeroEscogido}`;
     
     } else if (numeroEscogido > numeroRandom) {
         document.querySelector("#posible-numero").textContent = `Tu numero es menor que ${numeroEscogido}`;
@@ -39,7 +39,7 @@ function ayudaParaGanar(numeroEscogido){
 
 $botonGenerarNumero.onclick = function (){
     numeroRandom = getRandomInt(1,101);
-    console.log(numeroRandom);
+    
     
     
 }
