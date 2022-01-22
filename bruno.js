@@ -29,10 +29,10 @@ function disminuirIntento(){
 
 function ayudaParaGanar(numeroEscogido){
     if (numeroEscogido < numeroRandom){
-        document.querySelector("#posible-numero").textContent = `Tu numero es mayor que ${numeroEscogido}`;
+        document.querySelector("#texto-resultado").textContent = `Tu numero es mayor que ${numeroEscogido}`;
     
     } else if (numeroEscogido > numeroRandom) {
-        document.querySelector("#posible-numero").textContent = `Tu numero es menor que ${numeroEscogido}`;
+        document.querySelector("#texto-resultado").textContent = `Tu numero es menor que ${numeroEscogido}`;
 
     }
 }
@@ -56,14 +56,13 @@ $botonAdivinar.onclick = function(){
     if(numeroElegido != numeroRandom){
         disminuirIntento();
         document.querySelector("#resultado").className = "";
-        document.querySelector("#resultado2").className = "oculto";
         ayudaParaGanar(numeroElegido);
 
     } else if (numeroElegido === numeroRandom) {
-        document.querySelector("#resultado2").className = "";
-        document.querySelector("#resultado").className = "oculto";
+
+        document.querySelector("#resultado").className = "";
+        document.querySelector("#texto-resultado").innerText = `¡¡GANASTE!! El numero correcto era ${numeroElegido}`;
         
-        document.querySelector("#intento-correcto").innerText = numeroRandom;
     }
 
     
